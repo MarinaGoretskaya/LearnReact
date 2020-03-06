@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default () => (
+export default props => (
     <div>
-        <p>This car</p>
+        <h3>Car name: {props.name}</h3>
+        <p>Year: <strong>{props.year}</strong></p>
+        { props.children }
     </div>
 )
